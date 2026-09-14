@@ -12,12 +12,12 @@ def employee_report(employees):
         total_salary += details["salary"]
     print(total_salary)
 
-    average_salary = total_salary / len(details)
+    average_salary = total_salary / len(employees)
     print(average_salary)
 
     highest_salary = max(employees ,key=lambda x: employees[x]["salary"])
     print(highest_salary)
-    print(employees[highest_salary])
+    print(employees[highest_salary]["salary"])
 
     count = 0
     for  details in employees.values():
@@ -26,9 +26,9 @@ def employee_report(employees):
     print(count) 
 
     for name , details in employees.items():
-        if details["performance"] > 80:
+        if details["performance"] >= 80:
             print(name ,"excellent")
-        elif 60 < details["performance"] < 70:
+        elif 60 <= details["performance"] < 80:
             print( name ,"good")
         else:
            print( name ,"need improvement")
@@ -40,3 +40,9 @@ def employee_report(employees):
             print(name ,"no bonus")
 
 employee_report(employees)
+
+
+
+
+
+

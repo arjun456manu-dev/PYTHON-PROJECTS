@@ -32,6 +32,3 @@ def valid_customers(customers):
 
     return(valid_list)
 print(valid_customers(customers))        
-
-
-

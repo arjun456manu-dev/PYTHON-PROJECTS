@@ -43,7 +43,10 @@ def clean_transactions(transactions):
         
     return(cleaned_transactions)
 cleaned = clean_transactions(transactions)   
-print(cleaned)    
+print(cleaned) 
+
+
+
 
 
 

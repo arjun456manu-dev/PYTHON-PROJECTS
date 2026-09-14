@@ -17,13 +17,9 @@ def validate_customers(customers):
 
     count = 0
     for c in customers:
-        if c["name"] == "" and c["age"] <= 0 and c["email"] =="":
+        if c["name"] == "" or c["age"] <= 0 or c["email"] =="":
             count += 1
     print(count) 
-
-    new_valid_list = []
-    for c in valid_list:
-        new_valid_list.append(c)  
 
 
     return(valid_list)
